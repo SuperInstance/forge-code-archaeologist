@@ -1,0 +1,11 @@
+{
+  "name": "Commit Prediction",
+  "stage": "mirror",
+  "sequence": 1,
+  "description": "Given a sequence of 10 commits from an expert fixing a complex bug, predict what the NEXT commit will do before seeing it.",
+  "input": "exercises/04-mirror/fixtures/commit_trail.json",
+  "constraint": "Read commits sequentially. Write your prediction BEFORE advancing.",
+  "success_signal": "Agent predicts >= 7 out of 10 next-commit intentions correctly",
+  "failure_signal": "Predictions are vague or could apply to any fix",
+  "attunement_target": "expert_intention_reading"
+}

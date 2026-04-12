@@ -1,0 +1,12 @@
+{
+  "name": "Minimal Restore",
+  "stage": "cut",
+  "sequence": 3,
+  "description": "Given a module where 50% of code has been deleted, restore ONLY what's needed for tests to pass again.",
+  "input": "exercises/01-cut/fixtures/minimal_restore.py",
+  "constraint": "Each line you add costs points. Fewer lines = better score.",
+  "time_limit_minutes": 45,
+  "success_signal": "Agent restores <60% of deleted code while passing all tests",
+  "failure_signal": "Agent restores code that isn't actually load-bearing",
+  "attunement_target": "essential_vs_accidental_discrimination"
+}

@@ -1,0 +1,12 @@
+{
+  "ability": "code_archaeologist",
+  "stages": [
+    {"stage": "cut", "exercises": 3, "min_pass": 2, "evidence": "structural_load_sensitivity"},
+    {"stage": "crisis", "exercises": 1, "min_pass": 1, "evidence": "test_vs_truth_discrimination"},
+    {"stage": "navigate", "exercises": 2, "min_pass": 1, "evidence": "attention_map_following"},
+    {"stage": "mirror", "exercises": 1, "min_pass": 1, "evidence": "expert_intention_reading"}
+  ],
+  "total_exercises": 7,
+  "minimum_for_attunement": 5,
+  "integration_required": true
+}

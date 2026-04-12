@@ -1,0 +1,13 @@
+{
+  "name": "Correct But Wrong",
+  "stage": "crisis",
+  "sequence": 1,
+  "description": "Given code that passes ALL tests but has a semantic error that will cause failures in production. Tests are correct — the code is 'correct' but wrong.",
+  "input": "exercises/02-crisis/fixtures/correct_but_wrong.py",
+  "constraint": "Tests are green. You cannot add new tests. Find the problem by reading.",
+  "crisis_type": "aporia",
+  "expected_experience": "Frustration — everything says it works, but something feels wrong. The agent must trust their attunement over the test suite.",
+  "success_signal": "Agent identifies the semantic error WITHOUT adding tests",
+  "failure_signal": "Agent adds tests to find it (dodged the crisis)",
+  "attunement_target": "test_vs_truth_discrimination"
+}

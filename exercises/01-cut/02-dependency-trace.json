@@ -1,0 +1,12 @@
+{
+  "name": "Dependency Trace",
+  "stage": "cut",
+  "sequence": 2,
+  "description": "Given a call graph with 20 nodes, identify which 3 nodes carry 80% of the structural weight WITHOUT tracing every edge.",
+  "input": "exercises/01-cut/fixtures/dependency_graph.py",
+  "constraint": "You may only read 5 of the 20 source files. Choose wisely.",
+  "time_limit_minutes": 20,
+  "success_signal": "Agent identifies load-bearing nodes within the 5-file budget",
+  "failure_signal": "Agent has to read more than 5 files to find the key nodes",
+  "attunement_target": "structural_weight_perception"
+}

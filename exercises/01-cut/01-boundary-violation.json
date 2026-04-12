@@ -1,0 +1,12 @@
+{
+  "name": "Boundary Violation Detection",
+  "stage": "cut",
+  "sequence": 1,
+  "description": "Given a Python module with 10 hidden bugs, remove functions one at a time until tests break. Then restore the MINIMUM code to fix the breakage.",
+  "input": "exercises/01-cut/fixtures/boundary_violation.py",
+  "constraint": "You may only remove code. You may not read the tests first.",
+  "time_limit_minutes": 30,
+  "success_signal": "Agent identifies which functions are load-bearing BEFORE removing them",
+  "failure_signal": "Agent removes randomly and checks tests after each removal",
+  "attunement_target": "structural_load_sensitivity"
+}

@@ -1,0 +1,20 @@
+{
+  "pattern_name": "Structural Debt Sensitivity",
+  "description": "The ability to perceive code that is structurally load-bearing without tracing all dependencies",
+  "signals": [
+    "Agent pauses before modifying code they haven't fully read",
+    "Agent asks 'what depends on this?' before removing code",
+    "Agent identifies coupling that isn't visible in the call graph",
+    "Agent flags 'this looks too simple for what it does'"
+  ],
+  "anti_signals": [
+    "Agent modifies code without hesitation",
+    "Agent trusts tests completely",
+    "Agent needs to trace full call graph before deciding"
+  ],
+  "measurable_outcomes": {
+    "false_positive_rate": "< 30%",
+    "false_negative_rate": "< 20%",
+    "detection_speed": "< 60 seconds per structural problem"
+  }
+}
